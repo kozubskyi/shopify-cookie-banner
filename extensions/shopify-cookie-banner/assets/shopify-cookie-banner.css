@@ -1,0 +1,156 @@
+.shopify-cookie-banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	left: 84px;
+	right: 84px;
+	bottom: 70px;
+	padding: 48px;
+	/* background: #ffffff; */
+	box-shadow: 0px 14px 42px rgba(8, 15, 52, 0.06);
+	border: 1px solid #d9dbe9;
+	border-radius: 2px;
+	z-index: 100;
+}
+
+.shopify-cookie-banner.hidden {
+	display: none;
+}
+
+.shopify-cookie-banner svg {
+	display: block;
+}
+
+.shopify-cookie-banner .icon-and-text {
+	display: flex;
+	align-items: center;
+}
+
+.shopify-cookie-banner .cookies-icon {
+	min-width: 68px;
+	margin-right: 22px;
+}
+
+.shopify-cookie-banner .text {
+	display: flex;
+	align-items: center;
+}
+
+.shopify-cookie-banner p {
+	margin: 0;
+	color: #6f6c90;
+}
+
+.shopify-cookie-banner a {
+	color: #ffc611;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.shopify-cookie-banner a:hover,
+.shopify-cookie-banner a:focus {
+	text-decoration: underline;
+}
+
+.shopify-cookie-banner .buttons {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0 0 0 36px;
+}
+
+.shopify-cookie-banner button {
+	cursor: pointer;
+}
+
+.shopify-cookie-banner .button-variant {
+	font: inherit;
+	line-height: 18px;
+	padding: 18px 26px;
+	border-radius: 56px;
+}
+
+.shopify-cookie-banner .accept-cookies-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	background: #ffc611;
+	color: #ffffff;
+	border: 1px solid transparent;
+	box-shadow: 0px 3px 12px rgba(74, 58, 255, 0.18);
+	white-space: nowrap;
+}
+
+.shopify-cookie-banner .small-cookie-icon {
+	display: inline-block;
+	min-width: 15px;
+	margin-right: 6px;
+}
+
+.shopify-cookie-banner .decline-cookies-button {
+	background: #ffffff;
+	color: #170f49;
+	border: 1px solid #eff0f7;
+	box-shadow: 0px 4px 8px rgba(74, 58, 255, 0.08);
+	margin: 0 0 0 20px;
+}
+
+.shopify-cookie-banner .close-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	margin: 0 0 0 36px;
+	padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+	.shopify-cookie-banner {
+		left: 42px;
+		right: 42px;
+		bottom: 35px;
+		padding: 34px;
+	}
+
+	.shopify-cookie-banner .button-variant {
+		padding: 14px 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.shopify-cookie-banner {
+		flex-wrap: wrap;
+		left: 10px;
+		right: 10px;
+		bottom: 10px;
+		padding: 20px;
+	}
+
+	.shopify-cookie-banner .icon-and-text {
+		flex-wrap: wrap;
+	}
+
+	.shopify-cookie-banner .cookies-icon {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+
+	.shopify-cookie-banner .buttons {
+		margin: 15px 0 0 0;
+	}
+
+	.shopify-cookie-banner .button-variant {
+		padding: 10px 15px;
+	}
+
+	.shopify-cookie-banner .close-button {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+}
