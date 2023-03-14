@@ -14,10 +14,6 @@
 	z-index: 100;
 }
 
-.shopify-cookie-banner.hidden {
-	display: none;
-}
-
 .shopify-cookie-banner svg {
 	display: block;
 }
